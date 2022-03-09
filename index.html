@@ -11,8 +11,34 @@
       const firstValue = prompt("Type a first value");
       const operator = prompt("Type an operator");
       const secondValue = prompt("Type a second value");
-      console.log(parseInt(firstValue) + parseInt(secondValue))
+      
+    //   if (operator === "+"){
+    //       console.log(parseFloat(firstValue) + parseFloat(secondValue));
+    //   } else if (operator === "-"){
+    //       console.log(parseFloat(firstValue) - parseFloat(secondValue));
+    //   } else if (operator === "*"){
+    //       console.log(parseFloat(firstValue) * parseFloat(secondValue));
+    //   } else if (operator === "/"){
+    //       console.log(parseFloat(firstValue) / parseFloat(secondValue));
+    //   } else {
+    //       console.log("Invalid operator");
+    //   }
 
+      function calculate(anOperator, a, b) {
+        if (anOperator === "+"){
+          console.log(parseFloat(a) + parseFloat(b));
+      } else if (anOperator === "-"){
+          console.log(parseFloat(a) - parseFloat(b));
+      } else if (anOperator === "*"){
+          console.log(parseFloat(a) * parseFloat(b));
+      } else if (anOperator === "/"){
+          console.log(parseFloat(a) / parseFloat(b));
+      } else {
+          console.log("Invalid operator");
+      }
+      }
+
+      calculate(operator, firstValue, secondValue);
     </script>
 </body>
 </html>
