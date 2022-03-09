@@ -1,8 +1,8 @@
 // Ask a number to the player (between 1 and 100)
-const playerName = prompt("What's your name?")
 let playerRandomNumber = prompt("Select a number between 1 and 100")
-playerRandomNumber=parseInt(playerRandomNumber)
+playerRandomNumber = parseInt(playerRandomNumber)
 const randomNumber = Math.floor(Math.random() * 100) + 1
+const playerName = prompt("What's your name?")
 
 // - If the player's number is over the stored value, log "It is less"
 while (playerRandomNumber !== randomNumber) { 
