@@ -11,11 +11,10 @@ while (playerRandomNumber !== randomNumber) {
     } else if (playerRandomNumber<randomNumber){
         alert("This is more")
     }
-    playerRandomNumber = prompt("Select a number between 1 and 100")
+    playerRandomNumber = parseInt(prompt("Select a number between 1 and 100"))
 } 
 
-alert(`${playerName} win!`)
-
+alert(`${playerName} win!`);
 
 
 
